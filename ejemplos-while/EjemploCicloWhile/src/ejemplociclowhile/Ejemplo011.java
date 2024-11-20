@@ -21,6 +21,8 @@ public class Ejemplo011 {
         while(contador <= limite){
             System.out.printf("%d\n", contador);
             contador = contador + 1;
+            //esa es la forma basica de la utilizacion del while, condicion mas 
+            // el aumento del contador para que no sea infinito.
         }
     }
     
