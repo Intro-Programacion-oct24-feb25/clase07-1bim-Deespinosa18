@@ -21,17 +21,25 @@ public class Ejemplo101 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         int limite_tabla = 12;
+        /* no utilizamos limite tabla ya que ahora pedimos
+         al ususario que ponga el limite de la tabla
+        */
         int contador = 1;
         int operacion;
         int tabla;
+        int limite;
         
         System.out.println("Ingrese el número de tabla a generar");
         tabla = entrada.nextInt();
         
+        System.out.println("Ingrese el limite de la tabla");
+        limite = entrada.nextInt();
+        if (tabla <=0 || ( tabla >12))
+            tabla = 12;
         String cadena = ""; // cadena acumulador
         cadena = String.format("%sTabla de multiplicar\n", cadena);
         
-        while (contador <= limite_tabla){
+        while (contador <= limite){
             operacion = tabla * contador;
             
             cadena = String.format("%s%d*%d=%d\n", 
