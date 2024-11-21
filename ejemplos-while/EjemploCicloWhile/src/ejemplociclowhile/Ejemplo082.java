@@ -41,12 +41,19 @@ public class Ejemplo082 {
             // proceso para salir del ciclo.
             System.out.println("Ingrese si/ yes/ s para salir");
             String temporal = entrada.nextLine();
-            if (temporal.equals("si") || temporal.equals("yes") 
+           /* if (temporal.equals("si") || temporal.equals("yes") 
                     || temporal.equals("s") 
                     || temporal.equals("y")
                     ) 
-                {
-                bandera = false;
+                { 
+             */  // bandera = false;
+             switch (temporal){
+                 case "si":
+                 case "yes":
+                 case "s":
+                 case "y":
+                 bandera =  false;
+                 break;
             }
         }
         promedio_final = suma_total / contador;
