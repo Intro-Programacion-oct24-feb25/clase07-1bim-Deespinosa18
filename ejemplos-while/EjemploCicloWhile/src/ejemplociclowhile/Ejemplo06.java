@@ -30,10 +30,10 @@ public class Ejemplo06 {
         System.out.println("Ingrese las notas de los "
                 + "estudiantes de su materia");
          
-         while (bandera) {
+         //while (bandera) {
         // el while puede estar declarado como  cualquiera de las dos opciones ya sea
         // como en la linea 32 y 33 o como en la 36 y 37
-       // while(bandera==true){
+        while(bandera==true){
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
